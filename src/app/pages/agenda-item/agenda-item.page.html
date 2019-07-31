@@ -1,9 +1,36 @@
 <ion-header>
+
   <ion-toolbar>
-    <ion-title>AgendaItem</ion-title>
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title>{{item?.title}}</ion-title>
   </ion-toolbar>
+
 </ion-header>
 
-<ion-content>
 
+<ion-content padding>
+<h1>{{item?.title}}</h1>
+<p>10:00 - 10:30</p> 
+<div class="speakers-photos2">
+    <a href="#" (click)="showSpeaker(1)">
+    <img [src]="p" alt="" *ngFor="let p of item?.photos" />
+    </a>
+    <hr style="clear:both">
+
+        
+    </div><h2>
+      Summary
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum at provident, rem in sint necessitatibus porro vel accusamus magnam, ea totam earum cumque esse placeat asperiores dolore veritatis, perspiciatis. Nihil!
+    </p>
+
+    <h3>Feedback</h3>
+    <div>
+
+    <ion-textarea type="text" placeholder="Ask a question or comment here!" value="" style="height: 50px;"></ion-textarea>
+    <button ion-button block>Send</button>
+    </div>
 </ion-content>

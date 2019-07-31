@@ -1,3 +1,26 @@
-<p>
-  schedule works!
-</p>
+<!-- Generated template for the ScheduleComponent component -->
+<img src="https://eventfuelapp.s3-eu-west-1.amazonaws.com/uploads/theme/9a5ae1c5f59b4215b71ff6f03f68285e87f19df0/1-NwTLMEGxAUk8yILro2_UAA.png" alt="">
+
+<div padding>
+  <ion-segment [(ngModel)]="selectedDay">
+    <ion-segment-button *ngFor="let day of daysOfWeek; let ndx = index"  value="ndx" (click)="selectDay(day)">
+      {{day}}
+    </ion-segment-button>
+    
+  </ion-segment>
+
+</div>
+<ion-list>
+  <ion-item *ngFor="let item of items" (click)="showAgendaItem(item)">
+    <ion-note item-start>
+      10:25
+    </ion-note>
+    
+    <h2>{{item.title}}</h2>
+    <div class="speakers-photos">
+        <img [src]="p" alt="" *ngFor="let p of item.photos" />
+        
+    </div>
+  </ion-item>
+
+</ion-list>

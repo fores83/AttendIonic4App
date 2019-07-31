@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { SignInPage  } from '../pages'
+import { SignInPage  } from '../sign-in/sign-in.page'
 import { AttendeeApiService } from '../../providers/attendee-api.service';
 
 @Component({
@@ -18,8 +18,7 @@ export class ProgramPage implements OnInit {
  
   async ShowUserDetailsModal (){
       const modal = await this.modalCtrl.create({
-        component: SignInPage,
-        componentProps: { value: 123 }
+        component: SignInPage
       });
       return await modal.present();
   }
