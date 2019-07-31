@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1, 
+        "title": "Some message",
+        "photo": "http://lorempixel.com/200/200/"
+    },
+    {
+        "id": 2, 
+        "title": "John Papa",
+        "photo": "http://lorempixel.com/200/200/"
+    },
+    {
+        "id": 3, 
+        "title": "Andrey Lander",
+        "photo": "http://lorempixel.com/200/200/"
+    },
+    {
+        "id": 4, 
+        "title": "Antony Lander",
+        "photo": "http://lorempixel.com/200/200/"
+    },
+    {
+        "id": 5, 
+        "title": "Antony Lander",
+        "photo": "http://lorempixel.com/200/200/",
+        "subTitle": "Item thumbnails showcase an image that takes"
+    },
+    {
+        "id": 6, 
+        "title": "Antony Lander",
+        "photo": "http://lorempixel.com/200/200/",
+        "subTitle": "Item thumbnails showcase an image that takes"
+    },
+    {
+        "id": 7, 
+        "title": "Antony Lander",
+        "photo": "http://lorempixel.com/200/200/",
+        "subTitle": "Item thumbnails showcase an image that takes"
+    },
+    {
+        "id": 8, 
+        "title": "Antony Lander",
+        "photo": "http://lorempixel.com/200/200/",
+        "subTitle": "Item thumbnails showcase an image that takes"
+    },
+    {
+        "id": 9, 
+        "title": "Antony Lander",
+        "photo": "http://lorempixel.com/200/200/",
+        "subTitle": "Item thumbnails showcase an image that takes"
+    },
+    {
+        "id": 10, 
+        "title": "Antony Lander",
+        "photo": "http://lorempixel.com/200/200/",
+        "subTitle": "Item thumbnails showcase an image that takes"
+    }
+]

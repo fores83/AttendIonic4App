@@ -16,20 +16,17 @@ export class ProgramPage implements OnInit {
   }
   currentView:string = 'schedule'
  
-ionViewDidLoad() {
-    this.attendeeApi.getSpeakers().subscribe(data => this.speakers = data);
-    this.attendeeApi.getAgenda().subscribe(data => this.agenda = data);
-}
-  
-async ShowUserDetailsModal (){
-    const modal = await this.modalCtrl.create({
-      component: SignInPage,
-      componentProps: { value: 123 }
-    });
-    return await modal.present();
-}
+  async ShowUserDetailsModal (){
+      const modal = await this.modalCtrl.create({
+        component: SignInPage,
+        componentProps: { value: 123 }
+      });
+      return await modal.present();
+  }
 
   ngOnInit() {
+    this.attendeeApi.getSpeakers().subscribe(data => this.speakers = data);
+    this.attendeeApi.getAgenda().subscribe(data => this.agenda = data);
   }
 
 }

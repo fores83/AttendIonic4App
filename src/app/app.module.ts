@@ -16,14 +16,14 @@ import { AttendeeApiService } from './providers/attendee-api.service';
 
 @NgModule({
   declarations: [AppComponent,SpeakersComponent, ScheduleComponent, DelegatesComponent, MessagesComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpModule],
   providers: [
     StatusBar,
-    HttpModule,
     SplashScreen,
     AttendeeApiService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: []
 })
 export class AppModule {}

@@ -1,22 +1,24 @@
 <ion-header>
+  <ion-toolbar>
     <!-- <ion-title>Program</ion-title> -->
     <ion-segment [(ngModel)]="currentView">
-    <ion-segment-button value="schedule">
-      Schedule
-    </ion-segment-button>
-    <ion-segment-button value="speakers">
-      Speakers
-    </ion-segment-button>
-  </ion-segment>
+      <ion-segment-button value="schedule">
+        Schedule
+      </ion-segment-button>
+      <ion-segment-button value="speakers">
+        Speakers
+      </ion-segment-button>
+    </ion-segment>
     <ion-buttons end>
       <button ion-button icon-only (click)="ShowUserDetailsModal()" >
         <ion-icon name="person"></ion-icon>
       </button>
     </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 
 <ion-content>
-  <!-- <app-schedule *ngIf="currentView=='schedule'" [agenda]="agenda"></app-schedule> -->
-  <!-- <app-speakers *ngIf="currentView=='speakers'" [speakers]="speakers"></app-speakers> -->
+  <!-- <app-schedule *ngIf="currentView=='schedule'" [agenda]="agenda"></app-schedule> 
+  <app-speakers *ngIf="currentView=='speakers'" [speakers]="speakers"></app-speakers> -->
 </ion-content>
